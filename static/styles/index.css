@@ -1,0 +1,158 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.menu-left-btn span {
+    float: left;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+    color: #B36AE2;
+}
+
+.menu-left-btn span:hover {
+    color: #00FA92;
+}
+
+.menu-right-btn {
+    float: right;
+    color: #00FA92;
+    background-color: #282828;
+}
+
+.menu-right-btn :hover{
+    color: #B36AE2;
+}
+
+.wrapper {
+    display: flex;
+    height: calc(100vh - 100px);
+}
+
+.wrapper-container {
+    border-top: 1px solid #282828;
+    flex: 1;
+}
+
+#content {
+    overflow: auto;
+    white-space: nowrap;
+    height: 100%;
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-input-form {
+    display: flex;
+    width: 100%;
+}
+
+.search-input {
+    border: 2px solid #FFF;
+    padding: 10px;
+    flex: 3;
+}
+
+.search-input-form span {
+    padding: 10px;
+    flex: 0;
+}
+
+#graph-svg {
+    width: 100%; 
+    height: auto; 
+    /* background-color:cyan; */
+}
+
+.menu-left {
+    margin-top: 50px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate3d(-100vw, 0, 0);
+    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 1000;
+    background-color: #00FA92;
+}
+
+.menu-left.show {
+    transform: translate3d(0vw, 0, 0);
+    z-index: 1000;
+}
+
+.menu-left-container {
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+.search-list {
+    flex: 1;
+    margin: 10px;
+    text-align: center; 
+    border: none;
+}
+
+.search-link:hover {
+    color: #B36AE2;
+}
+
+.menu-right {
+    margin-top: 50px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate3d(100vw, 0, 0);
+    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 1000;
+    background-color: #B36AE2;
+}
+
+.menu-right.show {
+    transform: translate3d(0vw, 0, 0);
+}
+
+.menu-right-container{
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+.footer {
+    display: flex;
+    color: #bbbbbb;
+    bottom: 0;
+    align-items: center;
+    background-color: #282828;
+    height: 50px;
+}
+
+.footer-container {
+    width: 100%;
+    text-align: center;
+}
