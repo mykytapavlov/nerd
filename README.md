@@ -38,7 +38,7 @@ Create App to search & visualize notes as graph using:
 chmod +x nerd.py
 
 # 3. export PATH (to be able to run nerd.py from any folder)
-export PATH="$PATH:$HOME/$PATHTOFILE/nerd.py"
+export PATH=$HOME/github/nerd:$PATH
 
 # 4. try it
 nerd.py --help
