@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Closure
+title: Compiler
 ---
 
 # Compiler

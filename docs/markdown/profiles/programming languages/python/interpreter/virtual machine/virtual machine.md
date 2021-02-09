@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Closure
+title: Virtual Machine
 ---
 
 # Virtual Machine
