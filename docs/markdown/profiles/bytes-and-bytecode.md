@@ -1,3 +1,8 @@
+---
+layout: post
+title: Bytes and Bytecode
+---
+
 # Bytes and Bytecode
 
 ## Summary
