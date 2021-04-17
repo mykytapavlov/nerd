@@ -8,17 +8,17 @@ const data = {
             "children": [
                 {
                     "name": "compiler",
-                    "url": "markdown/profiles/python/interpreter/compiler/compiler",
+                    "url": "src/python/interpreter/compiler/compiler",
                     "children": [
                         {
                             "name": "bytecode",
-                            "url": "markdown/profiles/python/interpreter/compiler/bytecode",
+                            "url": "src/python/interpreter/compiler/bytecode",
                         }
                     ],  
                 },
                 {
                     "name": "virtual machine",
-                    "url": "markdown/profiles/python/interpreter/virtual-machine/virtual-machine",  
+                    "url": "src/python/interpreter/virtual-machine/virtual-machine",  
                 }
             ],
         },
