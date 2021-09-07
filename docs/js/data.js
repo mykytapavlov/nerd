@@ -41,12 +41,6 @@ const data = {
         {
             "name": "standard-library",
             "url": "",
-            "children": [
-                {
-                    "name": "data-model",
-                    "url": "",
-                },
-            ],
         }
     ]
 }
