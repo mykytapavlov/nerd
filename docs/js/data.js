@@ -32,7 +32,7 @@ const data = {
                     "children": [
                         {
                             "name": "metaclass",
-                            "url": "docs/src/python/language-reference/data-model/metaclass",
+                            "url": "src/python/language-reference/data-model/metaclass",
                         }
                     ],
                 },
