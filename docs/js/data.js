@@ -23,7 +23,7 @@ const data = {
             ],
         },
         {
-            "name": "standard-library",
+            "name": "language-reference",
             "url": "",
             "children": [
                 {
@@ -32,9 +32,19 @@ const data = {
                     "children": [
                         {
                             "name": "metaclass",
-                            "url": "src/python/standard-library/data-model/metaclass",
+                            "url": "docs/src/python/language-reference/data-model/metaclass",
                         }
                     ],
+                },
+            ],
+        }
+        {
+            "name": "standard-library",
+            "url": "",
+            "children": [
+                {
+                    "name": "data-model",
+                    "url": "",
                 },
             ],
         }
