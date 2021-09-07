@@ -38,9 +38,5 @@ const data = {
                 },
             ],
         }
-        {
-            "name": "standard-library",
-            "url": "",
-        }
     ]
 }
