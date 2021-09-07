@@ -23,21 +23,19 @@ const data = {
             ],
         },
         {
-            "name": "support-library",
+            "name": "standard-library",
             "url": "",
             "children": [
                 {
-                    "name": "built-in-modules",
+                    "name": "data-model",
                     "url": "",
+                    "children": [
+                        {
+                            "name": "metaclass",
+                            "url": "src/python/standard-library/data-model/metaclass",
+                        }
+                    ],
                 },
-                {
-                    "name": "data-types",
-                    "url": "",
-                },
-                {
-                    "name": "functions",
-                    "url": "",
-                }
             ],
         }
     ]
