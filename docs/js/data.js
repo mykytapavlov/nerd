@@ -1,10 +1,8 @@
 const data = {
     "name": "python",
-    "url": "",
     "children": [
         {
             "name": "interpreter",
-            "url": "",
             "children": [
                 {
                     "name": "compiler",
@@ -25,6 +23,10 @@ const data = {
         {
             "name": "metaclass",
             "url": "src/python/metaclass",
+        },
+        {
+            "name": "closure",
+            "url": "src/python/closure",
         }
     ]
 }

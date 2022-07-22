@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    background-color: #1B1C1E;
 }
 
 body {
@@ -36,7 +37,7 @@ body {
 .menu-right-btn {
     float: right;
     color: #00FA92;
-    background-color: #282828;
+    background-color: #1B1C1E;
 }
 
 .menu-right-btn :hover{
@@ -45,7 +46,7 @@ body {
 
 .wrapper {
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 179px);
 }
 
 .wrapper-container {
@@ -71,9 +72,10 @@ body {
 }
 
 .search-input {
-    border: 2px solid #FFF;
+    border: 2px solid #1B1C1E;
     padding: 10px;
     flex: 3;
+    background-color: #1B1C1E;
 }
 
 .search-input-form span {
@@ -83,8 +85,7 @@ body {
 
 #graph-svg {
     width: 100%; 
-    height: auto; 
-    /* background-color:cyan; */
+    height: auto;
 }
 
 .menu-left {
@@ -97,7 +98,7 @@ body {
     transition: transform .3s cubic-bezier(0, .52, 0, 1);
     overflow: scroll;
     z-index: 1000;
-    background-color: #00FA92;
+    background-image: url("../images/background.png");
 }
 
 .menu-left.show {
@@ -107,7 +108,7 @@ body {
 
 .menu-left-container {
     display: flex;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 179px);
 }
 
 .search-list {
@@ -131,7 +132,7 @@ body {
     transition: transform .3s cubic-bezier(0, .52, 0, 1);
     overflow: scroll;
     z-index: 1000;
-    background-color: #B36AE2;
+    background-image: url("../images/background.png");
 }
 
 .menu-right.show {
@@ -140,7 +141,7 @@ body {
 
 .menu-right-container{
     display: flex;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 179px);
 }
 
 .footer {
@@ -149,7 +150,8 @@ body {
     bottom: 0;
     align-items: center;
     background-color: #282828;
-    height: 50px;
+    background-image: url("../images/footer-background.png");
+    height: 128px;
 }
 
 .footer-container {

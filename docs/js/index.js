@@ -6,7 +6,7 @@ const width = window.innerWidth || document.documentElement.clientWidth || docum
 const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
 const simulation = d3.forceSimulation(nodes)
-    .force("link", d3.forceLink(links).id(node => node.id).distance(5).strength(1))
+    .force("link", d3.forceLink(links).id(node => node.id).distance(50).strength(1))
     .force("charge", d3.forceManyBody().strength(-100))
     .force("x", d3.forceX())
     .force("y", d3.forceY());
@@ -43,14 +43,14 @@ const stroke = tree.append("g")
     .join("line");
 
 const circle = tree.append("g")
-    .attr("fill", "#00FA92")
-    .attr("stroke", "#B36AE2")
+    .attr("fill", "#FBF8C1")
+    .attr("stroke", "#FBF8C1")
     .attr("stroke-width", 1.5)
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-    .attr("fill", node => node.children ? null : "#B36AE2")
-    .attr("stroke", node => node.children ? null : "#fff")
+    .attr("fill", node => node.data.url ? null : "#282828")
+    .attr("stroke", node => node.data.url ? null : "#282828")
     .attr("r", 3.5)
     .call(drag(simulation));
 
