@@ -23,20 +23,8 @@ const data = {
             ],
         },
         {
-            "name": "language-reference",
-            "url": "",
-            "children": [
-                {
-                    "name": "data-model",
-                    "url": "",
-                    "children": [
-                        {
-                            "name": "metaclass",
-                            "url": "src/python/language-reference/data-model/metaclass",
-                        }
-                    ],
-                },
-            ],
+            "name": "metaclass",
+            "url": "src/python/metaclass",
         }
     ]
 }

@@ -154,4 +154,4 @@ builtins.__build_class__ = customized_build_class
 ```
 
 ## Reference
-[Link](https://docs.python.org/3/reference/datamodel.html#metaclasses)
+[Link](https://youtu.be/cKPlPJyQrt4?t=1272)
