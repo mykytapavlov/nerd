@@ -8,7 +8,7 @@
 ## Example
 ```c
 int main() {
-    int x = 1;
+    int x = 1; // In C defines a memory block named x
     printf("The memory address of a `x=%i` is: %p\n", x, (void*) &x); // The memory address of a `x=1` is: 0x7ffee20969c8
     x = 2.2;
     printf("Changing the value to `x=2.2`, but is still int `x=%i`\n", x); // Changing the value to `x=2.2`, but is still int `x=2`
@@ -18,8 +18,8 @@ int main() {
 ```
 
 ```py
-x = 1.1
-print(id(x))  # 140320845714128
+x = 1.1  # In Python defines a pointer named x that points to some other memory block containing the float object instance with value of 1.1
+print(id(x))  # 140320845714128 (memory address)
 print(x.is_integer())  # False
 print(isinstance(x, float))  # True
 print(isinstance(x, int))  # False
@@ -29,7 +29,7 @@ print(x)  # 1.1
 print(dir(x))  # ['__abs__', '__add__', '__bool__', '__class__', '__delattr__', '__dir__', '__divmod__' ...]
 
 x = 1
-print(id(x))  # 4448324240
+print(id(x))  # 4448324240  (memory address)
 print(isinstance(x, int))  # True
 print(x.__int__())  # 1
 print(x.__float__())  # 1.0
