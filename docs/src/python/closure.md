@@ -3,7 +3,7 @@
 ## Summary
 * `inner` function has an access to the variable (called `free variable`) defined in `outer` function
 * Use `nonlocal` statement inside `inner` function to modify `free variable` for both `inner` and `outer` scopes (mutable `free variable` does not need `nonlocal` statement to be modified for both scopes)
-* To access `free variable` outside `inner` and `outer` scopes use `inner`.__code__.co_freevars for the name & `inner`.__closure__[0].cell_contents for the value
+* To access `free variable` outside `inner` and `outer` scopes use `inner.__code__.co_freevars` for the name & `inner.__closure__[0].cell_contents` for the value
 
 ## Example
 ```py
