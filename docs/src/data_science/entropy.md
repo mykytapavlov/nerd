@@ -9,7 +9,7 @@
 
 ## Table
 
-#  | Age          | Salary        |     Credit    |
+i  | Age          | Salary        |     Credit    |
 ---|--------------|---------------|:-------------:|
 1  | 23           | 1000          |      yes      |
 2  | 26           | 1200          |      yes      |
@@ -45,7 +45,7 @@ entropy = round(- (p1 * log(p1, BASE) + p2 * log(p2, BASE)), 3)  # initial
 ### [Case 1] Feature: Age (split by)
 
 #### Group 1: `Age[20-39]`
-#  | Age          | Salary        |     Credit    |
+i  | Age          | Salary        |     Credit    |
 ---|--------------|---------------|:-------------:|
 1  | 23           | 1000          |      yes      |
 2  | 26           | 1200          |      yes      |
@@ -70,7 +70,7 @@ entropy1 = round(- (p1 * log(p1, BASE) + p2 * log(p2, BASE)), 3)  # group 1
 ```
 
 #### Group 2: `Age[40-60]`
-#  | Age          | Salary        |     Credit    |
+i  | Age          | Salary        |     Credit    |
 ---|--------------|---------------|:-------------:|
 7  | 42           | 1500          |      no       |
 8  | 43           | 2500          |      yes      |
@@ -109,7 +109,7 @@ IG =  entropy - (p1 * entropy1 + p2 * entropy2) = 0.997 - (0.4 * 0.651 + 0.6 * 0
 ### [Case 2] Feature: Salary (split by)
 
 #### Group 1: `Salary[0, 1499]`
-#  | Age          | Salary        |     Credit    |
+i  | Age          | Salary        |     Credit    |
 ---|--------------|---------------|:-------------:|
 1  | 23           | 1000          |      yes      |
 2  | 26           | 1200          |      yes      |
@@ -133,7 +133,7 @@ entropy1 = round(- (p1 * log(p1, BASE) + p2 * log(p2, BASE)), 3)  # group 1
 ```
 
 #### Group 2: `Salary[1500, 2499]`
-#  | Age          | Salary        |     Credit    |
+i  | Age          | Salary        |     Credit    |
 ---|--------------|---------------|:-------------:|
 3  | 31           | 1500          |      yes      |
 4  | 34           | 1500          |      yes      |
@@ -158,7 +158,7 @@ entropy2 = round(- (p1 * log(p1, BASE) + p2 * log(p2, BASE)), 3)  # group 2
 ```
 
 #### Group 3: `Salary[2500-inf]`
-#  | Age          | Salary        |     Credit    |
+i  | Age          | Salary        |     Credit    |
 ---|--------------|---------------|:-------------:|
 6  | 37           | 4000          |      no       |
 8  | 43           | 2500          |      yes      |
