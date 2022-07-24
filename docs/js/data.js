@@ -31,6 +31,15 @@ const data = {
         {
             "name": "pointer",
             "url": "src/python/pointer",
+        },
+        {
+            "name": "data_science",
+            "children": [
+                {
+                    "name": "entropy",
+                    "url": "src/data_science/entropy",
+                }
+            ],
         }
     ]
 }
