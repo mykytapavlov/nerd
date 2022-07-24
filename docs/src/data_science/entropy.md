@@ -2,8 +2,9 @@
 
 ## Summary
 * `Entropy` mesures how data (or sub-group) is clean, so should be low for the clean one.
-* `Information Gain (IG)` mesures how column is infomative in data, so should be hight for informative one (based on target).
+* `Information Gain (IG)` mesures how column is infomative (correlates with target column) in data, so should be hight for informative one.
 * `IG` highlights columns in data to be kept / dropped.
+* Sub-groups can be created with different range. `IG` can help to determine better range to use.
 
 ## Example
 
