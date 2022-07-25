@@ -33,6 +33,7 @@ i  | Flat         | Car           |     Wife      |   Children    |
 10 | rent         | yes           |      yes      |      yes      |
 
 * Evaluate [Entropy](/entropy)
+
 ```py
 from math import log
 
@@ -55,6 +56,7 @@ i  | Flat         | Car           |     Wife      |   Children    |
 8  | own          | no            |      yes      |      yes      |
 
 * Evaluate [Entropy](/entropy)
+
 ```py
 from math import log
 
@@ -116,5 +118,6 @@ car:yes       car:no        wife:yes  wife:no
    |            |              |          |
 children:no children:no  children:yes children:no
 ```
+
 ## Reference
 [Link]()
