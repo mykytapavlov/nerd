@@ -6,8 +6,6 @@
 * `IG` highlights columns in data to be kept / dropped.
 * Sub-groups can be created with different range. `IG` can help to determine better range to use.
 
-## Example
-
 ## Table
 
 i  | Age          | Salary        |     Credit    |

@@ -38,6 +38,10 @@ const data = {
                 {
                     "name": "entropy",
                     "url": "src/data_science/entropy",
+                },
+                {
+                    "name": "decision tree",
+                    "url": "src/data_science/decision_tree",
                 }
             ],
         }
