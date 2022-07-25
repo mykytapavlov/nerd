@@ -1,7 +1,7 @@
 # Decision tree
 
 ## Summary
-* Find subgroups in data with the lowest [Entropy](src/data_science/entropy)
+* Find subgroups in data with the lowest [Entropy](/entropy)
 
 ## Table
 
@@ -32,7 +32,7 @@ i  | Flat         | Car           |     Wife      |   Children    |
 9  | rent         | yes           |      no       |      no       |
 10 | rent         | yes           |      yes      |      yes      |
 
-* Evaluate [Entropy](src/data_science/entropy)
+* Evaluate [Entropy](/entropy)
 ```py
 from math import log
 
@@ -54,7 +54,7 @@ i  | Flat         | Car           |     Wife      |   Children    |
 7  | own          | yes           |      yes      |      yes      |
 8  | own          | no            |      yes      |      yes      |
 
-* Evaluate [Entropy](src/data_science/entropy)
+* Evaluate [Entropy](/entropy)
 ```py
 from math import log
 
@@ -66,7 +66,7 @@ entropy = round(- (p1 * log(p1, BASE) + p2 * log(p2, BASE)), 3)
 # p1: 0.8, p2: 0.2, entropy: 0.722
 ```
 
-* If [Entropy](src/data_science/entropy) is low, repeat for each sub-group
+* If [Entropy](/entropy) is low, repeat for each sub-group
 
 ### [Step 2] Feature: Car (split by) (For Group 1)
 
