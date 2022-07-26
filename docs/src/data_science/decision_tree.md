@@ -80,7 +80,21 @@ i  | Flat         | Car           |     Wife      |   Children    |
 9  | rent         | yes           |      no       |      no       |
 10 | rent         | yes           |      yes      |      yes      |
 
-* probability: 1/3
+```py
+# Evaluate probability of class
+# target column: children
+# target value: no
+# p - probability
+# n - no (2)
+# m - yes (1)
+# p = n / (n + m)
+
+p = 2 / (2 + 1) = 2/3
+
+# Laplace correction probability
+# p_smoothed = (n + 1) / (n + m + 2)
+p_smoothed = (2 + 1) / (2 + 1 + 2) = 3/5
+```
 
 #### Group 1.2
 
@@ -89,7 +103,21 @@ i  | Flat         | Car           |     Wife      |   Children    |
 1  | rent         | no            |      yes      |      no       |
 5  | rent         | no            |      yes      |      no       |
 
-* probability: 2/2
+```py
+# Evaluate probability of class
+# target column: children
+# target value: no
+# p - probability
+# n - no (2)
+# m - yes (0)
+# p = n / (n + m)
+
+p = 2 / (2 + 0) = 2/2
+
+# Laplace correction probability
+# p_smoothed = (n + 1) / (n + m + 2)
+p_smoothed = 2 + 1 / 2 + 0 + 2 = 3/4
+```
 
 ### [Step 3] Feature: Wife (split by) (For Group 2)
 
@@ -102,7 +130,21 @@ i  | Flat         | Car           |     Wife      |   Children    |
 8  | own          | no            |      yes      |      yes      |
 7  | own          | yes           |      yes      |      yes      |
 
-* probability: 4/4
+```py
+# Evaluate probability of class
+# target column: children
+# target value: yes
+# p - probability
+# n - yes (4)
+# m - no (0)
+# p = n / (n + m)
+
+p = 4 / (4 + 0) = 4/4
+
+# Laplace correction probability
+# p_smoothed = (n + 1) / (n + m + 2)
+p_smoothed = 4 + 1 / 4 + 0 + 2 = 5/6
+```
 
 #### Group 2.2
 
@@ -110,8 +152,23 @@ i  | Flat         | Car           |     Wife      |   Children    |
 ---|--------------|---------------|---------------|:-------------:|
 3  | own          | yes           |      no       |      no       |
 
-* probability: 1/1
+```py
+# Evaluate probability of class
+# target column: children
+# target value: no
+# p - probability
+# n - no (1)
+# m - yes (0)
+# p = n / (n + m)
 
+p = 1 / (1 + 0) = 1/1
+
+# Laplace correction probability
+# p_smoothed = (n + 1) / (n + m + 2)
+p_smoothed = 1 + 1 / 1 + 0 + 2 = 2/3
+```
+
+#### Decision Tree
 
 ```txt
 Disision Tree:
@@ -121,7 +178,7 @@ Disision Tree:
     /           \                       /         \
 car:yes        car:no            wife:yes          wife:no   
    |              |                 |                 |
-children:no(1/3) children:no(2/2)  children:yes(4/4) children:no(1/1)
+children:no(3/5) children:no(3/4)  children:yes(5/6) children:no(2/3)
 ```
 
 ## Reference
