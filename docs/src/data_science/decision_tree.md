@@ -80,6 +80,7 @@ i  | Flat         | Car           |     Wife      |   Children    |
 9  | rent         | yes           |      no       |      no       |
 10 | rent         | yes           |      yes      |      yes      |
 
+* probability: 1/3
 
 #### Group 1.2
 
@@ -88,6 +89,7 @@ i  | Flat         | Car           |     Wife      |   Children    |
 1  | rent         | no            |      yes      |      no       |
 5  | rent         | no            |      yes      |      no       |
 
+* probability: 2/2
 
 ### [Step 3] Feature: Wife (split by) (For Group 2)
 
@@ -100,6 +102,7 @@ i  | Flat         | Car           |     Wife      |   Children    |
 8  | own          | no            |      yes      |      yes      |
 7  | own          | yes           |      yes      |      yes      |
 
+* probability: 4/4
 
 #### Group 2.2
 
@@ -107,16 +110,18 @@ i  | Flat         | Car           |     Wife      |   Children    |
 ---|--------------|---------------|---------------|:-------------:|
 3  | own          | yes           |      no       |      no       |
 
+* probability: 1/1
+
 
 ```txt
 Disision Tree:
-                      *
-            /                    \
-     flat:rent                 flat:own
-    /         \               /        \
-car:yes       car:no        wife:yes  wife:no   
-   |            |              |          |
-children:no children:no  children:yes children:no
+                          *
+            /                            \
+      flat:rent                          flat:own
+    /           \                       /         \
+car:yes        car:no            wife:yes          wife:no   
+   |              |                 |                 |
+children:no(1/3) children:no(2/2)  children:yes(4/4) children:no(1/1)
 ```
 
 ## Reference
