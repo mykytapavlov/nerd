@@ -21,6 +21,15 @@ const data = {
             ],
         },
         {
+            "name": "buil-in-types",
+            "children": [
+                {
+                    "name": "numeric",
+                    "url": "src/python/built-in-types/numeric"
+                },
+            ],
+        },
+        {
             "name": "metaclass",
             "url": "src/python/metaclass",
         },
