@@ -39,6 +39,20 @@ try:
     x.is_integer()
 except AttributeError as e:
     print(e)  # 'int' object has no attribute 'is_integer'
+
+# Strong dynamically-typed
+# >>> 1.1 + 1
+# 2.1
+
+# >>> 'a' + 1
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: can only concatenate str (not "int") to str
+
+# >>> 'a' + str(1)
+# 'a1'
+
+# Type is checked once operation is invoked during interpretation.
 ```
 
 ## Reference
