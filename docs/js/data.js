@@ -27,6 +27,14 @@ const data = {
                     "name": "numeric",
                     "url": "src/python/built-in-types/numeric"
                 },
+                {
+                    "name": "string",
+                    "url": "src/python/built-in-types/string"
+                },
+                {
+                    "name": "bool",
+                    "url": "src/python/built-in-types/boolean"
+                },
             ],
         },
         {
