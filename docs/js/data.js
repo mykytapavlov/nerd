@@ -42,7 +42,7 @@ const data = {
             "children": [
                 {
                     "name": "if",
-                    "url": "src/python/control-flow/if.md"
+                    "url": "src/python/control-flow/if"
                 },
             ],
         },
