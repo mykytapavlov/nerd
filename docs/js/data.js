@@ -38,6 +38,15 @@ const data = {
             ],
         },
         {
+            "name": "control-flow",
+            "children": [
+                {
+                    "name": "if",
+                    "url": "src/python/control-flow/if.md"
+                },
+            ],
+        },
+        {
             "name": "metaclass",
             "url": "src/python/metaclass",
         },
