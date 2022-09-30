@@ -26,6 +26,12 @@
 # 1
 
 # Object identity
+# `is` validates if it is the same object in memory
+# `is` comonly used for check if something is None
+# >>> y = None
+# >>> y is None
+# True
+
 # >>> 1 is 1
 # <stdin>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?
 # True
@@ -36,7 +42,13 @@
 
 # >>> y = 1
 # >>> x is y
-# True
+# True  
+# Example of iterpreter internals optimization to create single object of `1` in memory
+# True, False, None, small numbers are created once in memory
+# >>> x = 1000
+# >>> y = 1000
+# >>> x is y
+# False
 
 # >>> a = 2
 # >>> x is a
