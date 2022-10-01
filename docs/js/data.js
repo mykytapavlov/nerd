@@ -32,8 +32,12 @@ const data = {
                     "url": "src/python/built-in-types/string"
                 },
                 {
-                    "name": "bool",
+                    "name": "boolean",
                     "url": "src/python/built-in-types/boolean"
+                },
+                {
+                    "name": "list",
+                    "url": "src/python/built-in-types/list"
                 },
             ],
         },
@@ -43,6 +47,10 @@ const data = {
                 {
                     "name": "if",
                     "url": "src/python/control-flow/if"
+                },
+                {
+                    "name": "for",
+                    "url": "src/python/control-flow/for"
                 },
             ],
         },
