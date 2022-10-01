@@ -7,62 +7,73 @@
 
 
 ## Example
+
+### Conditional operations
 ```py
-# Conditional operations
-# >>> x
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# NameError: name 'x' is not defined
+print(x)  # NameError: name 'x' is not defined
 
-# >>> 3 < 1 < x
-# False
+# First condition (3 < 1) evaluated only, because it's already False
+print(3 < 1 < x)  # False
 
-# >>> 3 > 1 < x
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# NameError: name 'x' is not defined
+print(3 > 1 < x)  # NameError: name 'x' is not defined
 
-# >>> 1 or x
-# 1
+print(1 or x)  # 1
+```
 
-# Object identity
-# `is` validates if it is the same object in memory
-# `is` comonly used for check if something is None
-# >>> y = None
-# >>> y is None
-# True
+### Object identity
+* `is` checks if it is the same object in memory (same id(obj))
+* Common usage to check if something is None
 
-# >>> 1 is 1
-# <stdin>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?
-# True
+```py
+y = None
+print(y is None)  # True
+print(id(y))  # 4304342832
+print(id(None))  # 4304342832
+```
 
-# >>> x = 1
-# >>> x is x
-# True
+### Example of python internals memory optimization
+```py
+x = 1
+print(id(x))  # 140573982988592
+y = 1
+print(id(y))  # 140573982988592
 
-# >>> y = 1
-# >>> x is y
-# True  
-# Example of iterpreter internals optimization to create single object of `1` in memory
-# True, False, None, small numbers are created once in memory
-# >>> x = 1000
-# >>> y = 1000
-# >>> x is y
-# False
+print(x is 1)  # True, but it's not pythonic
+print(x == 1)  # True, pythonic
 
-# >>> a = 2
-# >>> x is a
-# False
+print(x is y)  # True, optimization to create single memory cell for comonly used small number.
+# Same optimization applied for True, False & None, small strings
 
-# Gotchas
-# >>> class A:
-# ...     pass
-# ... 
-# >>> bool(A)
-# True
-# >>> a = A()
-# >>> bool(a)
-# True
+x = 1000
+print(id(x))  # 140573985899760
+y = 1000
+print(id(y))  # 140573985899920
+print(x is y)  # False
+
+
+x = 'a' * 1000
+print(id(x))  # 140573986198528
+y = 'a' * 1000
+print(id(y))  # 140573986198528
+print(x is y)  # True
+
+x = 'a' * 100000
+print(id(x))  # 140574003187712
+y = 'a' * 100000
+print(id(y))  # 140574003290112
+print(x is y)  # False
+```
+
+### Gotchas
+```py
+
+class A:
+    pass
+
+print(bool(A))  # True
+
+a = A()
+print(bool(a))  # True
 ```
 
 ## Table
