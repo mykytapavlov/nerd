@@ -59,6 +59,15 @@ my_dict[6] = 6  # {'one': 1, 'two': 2, 'three': 3, 'four': 4, ('five',): 5, 6: 6
 my_dict[['seven']] = 7  # TypeError: unhashable type: 'list'
 ```
 
+### Check if something in dict
+```py
+d = {1: 'test'}
+is_contain_one = 1 in d  # True, fast operation
+one = d.get(1, 'Not found')  # 'test'
+two = d.get(2, 'Not found')  # 'Not found'
+two = d.get(2)  # None
+```
+
 ### Dict Comprehension
 ```py
 sequence = [("one", 1), ("two", 2), ("three", 3)]
