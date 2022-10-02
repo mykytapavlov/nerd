@@ -3,7 +3,7 @@
 ## Summary
 * Literal: []
 * Constructor: list()
-* Mutable, Non-hashable data type
+* Mutable, non-hashable data type
 
 ## Example
 

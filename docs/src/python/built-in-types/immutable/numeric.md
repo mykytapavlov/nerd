@@ -5,6 +5,7 @@
 * Float
 * Complex
 * Underscore
+* Immutable, hashable data type
 
 ## Example
 ```py

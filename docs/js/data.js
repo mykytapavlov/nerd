@@ -24,20 +24,38 @@ const data = {
             "name": "buil-in-types",
             "children": [
                 {
-                    "name": "numeric",
-                    "url": "src/python/built-in-types/numeric"
+                    "name": "immutable",
+                    "children": [
+                        {
+                            "name": "numeric",
+                            "url": "src/python/built-in-types/numeric"
+                        },
+                        {
+                            "name": "string",
+                            "url": "src/python/built-in-types/string"
+                        },
+                        {
+                            "name": "boolean",
+                            "url": "src/python/built-in-types/boolean"
+                        },
+                        {
+                            "name": "tuple",
+                            "url": "src/python/built-in-types/tuple"
+                        },
+                    ]
                 },
                 {
-                    "name": "string",
-                    "url": "src/python/built-in-types/string"
-                },
-                {
-                    "name": "boolean",
-                    "url": "src/python/built-in-types/boolean"
-                },
-                {
-                    "name": "list",
-                    "url": "src/python/built-in-types/list"
+                    "name": "mutable",
+                    "children": [
+                        {
+                            "name": "list",
+                            "url": "src/python/built-in-types/list"
+                        },
+                        {
+                            "name": "tuple",
+                            "url": "src/python/built-in-types/tuple"
+                        },
+                    ]
                 },
             ],
         },

@@ -4,6 +4,7 @@
 * True
 * False
 * None
+* Immutable, hashable data type
 
 
 ## Example

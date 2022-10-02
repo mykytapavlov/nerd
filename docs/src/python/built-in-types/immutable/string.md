@@ -6,6 +6,7 @@
 * Triple quoted strings
 * Raw strings
 * Byte strings
+* Immutable, hashable data type
 
 ## Example
 ```py
