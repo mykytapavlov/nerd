@@ -78,6 +78,10 @@ const data = {
                     "name": "for",
                     "url": "src/python/control-flow/for"
                 },
+                {
+                    "name": "for",
+                    "url": "src/python/control-flow/while"
+                },
             ],
         },
         {
