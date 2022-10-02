@@ -42,6 +42,10 @@ const data = {
                             "name": "tuple",
                             "url": "src/python/built-in-types/immutable/tuple"
                         },
+                        {
+                            "name": "frozenset",
+                            "url": "src/python/built-in-types/immutable/frozenset"
+                        },
                     ]
                 },
                 {
