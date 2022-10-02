@@ -86,6 +86,10 @@ const data = {
                     "name": "for",
                     "url": "src/python/control-flow/function"
                 },
+                {
+                    "name": "try",
+                    "url": "src/python/control-flow/try"
+                },
             ],
         },
         {
