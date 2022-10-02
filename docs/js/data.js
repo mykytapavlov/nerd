@@ -51,6 +51,10 @@ const data = {
                             "name": "list",
                             "url": "src/python/built-in-types/mutable/list"
                         },
+                        {
+                            "name": "dict",
+                            "url": "src/python/built-in-types/mutable/dict"
+                        },
                     ]
                 },
             ],
