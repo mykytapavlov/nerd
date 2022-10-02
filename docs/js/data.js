@@ -28,19 +28,19 @@ const data = {
                     "children": [
                         {
                             "name": "numeric",
-                            "url": "src/python/built-in-types/numeric"
+                            "url": "src/python/built-in-types/immutable/numeric"
                         },
                         {
                             "name": "string",
-                            "url": "src/python/built-in-types/string"
+                            "url": "src/python/built-in-types/immutable/string"
                         },
                         {
                             "name": "boolean",
-                            "url": "src/python/built-in-types/boolean"
+                            "url": "src/python/built-in-types/immutable/boolean"
                         },
                         {
                             "name": "tuple",
-                            "url": "src/python/built-in-types/tuple"
+                            "url": "src/python/built-in-types/immutable/tuple"
                         },
                     ]
                 },
@@ -49,11 +49,7 @@ const data = {
                     "children": [
                         {
                             "name": "list",
-                            "url": "src/python/built-in-types/list"
-                        },
-                        {
-                            "name": "tuple",
-                            "url": "src/python/built-in-types/tuple"
+                            "url": "src/python/built-in-types/mutable/list"
                         },
                     ]
                 },
