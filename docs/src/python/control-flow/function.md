@@ -26,6 +26,18 @@ print(result)  # 4
 result = sum_two(2, 2)  # 4
 ```
 
+### By default function returns `None`
+```py
+def sum_two(x, y):
+    print(x + y)
+
+
+result = sum_two(2, 2)
+print(result)
+# 4
+# None
+```
+
 ### Function defenition with default arg
 ```py
 def sum_two(x, y=4):
