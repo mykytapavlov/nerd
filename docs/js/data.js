@@ -93,6 +93,15 @@ const data = {
             ],
         },
         {
+            "name": "oop",
+            "children": [
+                {
+                    "name": "class",
+                    "url": "src/python/oop/class"
+                },
+            ],
+        },
+        {
             "name": "metaclass",
             "url": "src/python/metaclass",
         },
