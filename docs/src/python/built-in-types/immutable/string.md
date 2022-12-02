@@ -47,7 +47,7 @@ m = '10' > '1'  # True
 # Index operations
 o = 'abc'
 p = len(o)  # 3, O(1)
-p = o[1]  # 'a'
+p = o[0]  # 'a'
 p = o[-1]  # 'c'
 p = o[:2]  # 'ab'
 p = o[1:2]  # 'b'
