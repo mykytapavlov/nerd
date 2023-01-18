@@ -21,7 +21,7 @@ const data = {
             ],
         },
         {
-            "name": "buil-in-types",
+            "name": "built-in-types",
             "children": [
                 {
                     "name": "immutable",
@@ -112,6 +112,10 @@ const data = {
         {
             "name": "pointer",
             "url": "src/python/pointer",
+        },
+        {
+            "name": "contextvars",
+            "url": "src/python/contextvars",
         },
         {
             "name": "data_science",
