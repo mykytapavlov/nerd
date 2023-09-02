@@ -129,6 +129,32 @@ const data = {
                     "url": "src/data_science/decision_tree",
                 }
             ],
-        }
+        },
+        {
+            "name": "sdls",
+            "children": [
+                {
+                    "name": "waterfall",
+                    "url": "src/sdlc/waterfall",
+                },
+                {
+                    "name": "agile",
+                    "url": "src/sdlc/agile",
+                },
+                {
+                    "name": "techniques",
+                    "children": [
+                        {
+                            "name": "scrum",
+                            "url": "src/sdlc/techniques/scrum",
+                        },
+                        {
+                            "name": "kanban",
+                            "url": "src/sdlc/techniques/kanban",
+                        }
+                    ]
+                }
+            ],
+        },
     ]
 }

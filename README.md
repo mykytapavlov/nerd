@@ -1,5 +1,5 @@
 # Nerd
-* [Visualization](https://mykytapavlov.github.io/nerd/) 
+* [graph](https://mykytapavlov.github.io/nerd/) 
 * [nerd.py](nerd.py) creates .md files with pre-defined structure:
     * Name (required)
     * Summary
@@ -18,10 +18,6 @@ Create short notes with the same structure using:
 * Be able to search for notes using Terminal
 * Display notes hierarchy using Terminal (Tree)
 
-### Future plans
-Create App to search & visualize notes as graph using:
-* [React](https://reactjs.org/)
-* [FAST API](https://fastapi.tiangolo.com/)
 
 ### HOWTO
 ```shell

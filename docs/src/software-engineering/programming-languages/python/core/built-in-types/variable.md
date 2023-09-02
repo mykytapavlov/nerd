@@ -1,4 +1,4 @@
-# Pointer
+# Variable
 
 ## Summary
 * In Python `variable` defines a `named pointer` that `references` to some other `memory block` containing the `object` which has a `value` and other `methods` or `attributes`. Then `dir` can be used to see all of the `attributes` of that `object`.
