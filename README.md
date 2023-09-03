@@ -1,5 +1,5 @@
 # Nerd
-* [Visualization](https://mykytapavlov.github.io/nerd/) 
+* [graph](https://mykytapavlov.github.io/nerd/) 
 * [nerd.py](nerd.py) creates .md files with pre-defined structure:
     * Name (required)
     * Summary
@@ -18,10 +18,6 @@ Create short notes with the same structure using:
 * Be able to search for notes using Terminal
 * Display notes hierarchy using Terminal (Tree)
 
-### Future plans
-Create App to search & visualize notes as graph using:
-* [React](https://reactjs.org/)
-* [FAST API](https://fastapi.tiangolo.com/)
 
 ### HOWTO
 ```shell
@@ -54,7 +50,7 @@ nerd.py --help
 
 # 5. create a note
 
-# Possible workflow
+# Possible workflow (in docs/src)
 mkdir example-folder  # creates a example-folder 
 cd example-folder  # switches to example-folder
 
@@ -72,4 +68,9 @@ nerd.py -n note -s python -t True  # short notation
 # 6. open note.md for editing in your favorite text editor
 # using vscode:
 code note.md
+
+# 7. Build a graph based on folder structure (docs/index.html).
+#    Each folder needs to have only one .md file with the same name as a folder
+#    or/and subfolder(s)
+nerd.py --build true
 ```
