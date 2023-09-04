@@ -98,10 +98,13 @@ class Nerd:
                 f'Folder `{node["name"]}` must have only one file inside, got: {files}'  # noqa
             
             file = files[0]
+
+            assert len(file.split('.')) == 2, f'file name `{file}` should contain only one `.`'  # noqa
+
             assert node['name'] == file.split('.')[0], \
                 f'File name `{file}` should match parent folder\'s name `{node["name"]}`'  # noqa
             
-            node['url'] = f"{root.split('docs/')[1]}/{file}"
+            node['url'] = f"{root.split('docs/')[1]}/{file.split('.')[0]}"
 
         result = f'const data = {tree}'
 
