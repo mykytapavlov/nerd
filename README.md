@@ -69,7 +69,7 @@ nerd.py -n note -s python -t True  # short notation
 # using vscode:
 code note.md
 
-# 7. Build a graph based on folder structure (docs/index.html).
+# 7. Build a graph based on folder structure (docs/graph.html).
 #    Each folder needs to have only one .md file with the same name as a folder
 #    or/and subfolder(s)
 nerd.py --build true
